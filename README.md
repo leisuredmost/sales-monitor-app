@@ -1,19 +1,45 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Sales Order Monitor Practice
 
-Currently, two official plugins are available:
+A practice project for learning React, Vite, REST API integration,
+Git, and web application deployment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Dashboard summary cards
+- Paginated sales order listing
+- Search by order or customer information
+- Site and status filters
+- Loading, error, and empty states
+- Responsive layout
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Technology
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- React
+- Vite
+- JavaScript
+- CSS
+- Git and GitHub
 
-## Expanding the Oxlint configuration
+## Run locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Requirements: Node.js and npm.
+
+1. Clone the repository.
+2. Run `npm install`.
+3. Run `npm run dev`.
+4. Open the local URL printed in the terminal.
+
+## Production build
+
+Run `npm run build`.
+
+## Data source
+
+Uses the supplied fictional, read-only assessment API.
+The application sends GET requests and does not modify orders.
+
+## Learning notes
+
+This project is for practice. Verify API behavior, filtering,
+summary semantics, and deployment before considering it complete.
