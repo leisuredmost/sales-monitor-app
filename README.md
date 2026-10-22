@@ -12,6 +12,7 @@ ChatGPT Assisted
 - Site and status filters
 - Loading, error, and empty states
 - Responsive layout
+- Added Export CSV button for extras
 
 ## Technology
 
@@ -29,6 +30,10 @@ Requirements: Node.js and npm.
 2. Run `npm install`.
 3. Run `npm run dev`.
 4. Open the local URL printed in the terminal.
+
+## Run in browser
+
+1. Visit URL "https://sales-monitor-app-practice-vercel.vercel.app/"
 
 ## Production build
 
