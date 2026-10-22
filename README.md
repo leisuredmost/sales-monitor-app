@@ -2,6 +2,7 @@
 # Sales Order Monitor
 
 Take home assignment for Harrison Job Application - IT Executive
+ChatGPT Assisted
 
 ## Features
 
@@ -38,7 +39,3 @@ Run `npm run build`.
 Uses the supplied fictional, read-only assessment API.
 The application sends GET requests and does not modify orders.
 
-## Learning notes
-
-This project is for practice. Verify API behavior, filtering,
-summary semantics, and deployment before considering it complete.
