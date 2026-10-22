@@ -33,7 +33,7 @@ Requirements: Node.js and npm.
 
 ## Run in browser
 
-1. Visit URL "https://sales-monitor-app-practice-vercel.vercel.app/"
+1. Visit URL https://sales-monitor-app-hazel.vercel.app/
 
 ## Production build
 
