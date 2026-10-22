@@ -1,8 +1,7 @@
 
-# Sales Order Monitor Practice
+# Sales Order Monitor
 
-A practice project for learning React, Vite, REST API integration,
-Git, and web application deployment.
+Take home assignment for Harrison Job Application - IT Executive
 
 ## Features
 
