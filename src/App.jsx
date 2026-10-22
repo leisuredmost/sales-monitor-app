@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { getOrders, getMetadata } from "./api/salesOrders";
 import "./App.css";
+import { exportSalesOrders } from "./utils/exportCsv";
 
 function formatMoney(value) {
   return new Intl.NumberFormat("en-MY", {
@@ -36,6 +37,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [refreshCount, setRefreshCount] = useState(0);
+  const [exporting, setExporting] = useState(false);
 
   useEffect(() => {
     getMetadata()
@@ -196,6 +198,31 @@ function App() {
               </option>
             ))}
           </select>
+
+          <button className="export-button"
+  type="button"
+  disabled={exporting || loading}
+  onClick={async () => {
+    try {
+      setExporting(true);
+
+      const count = await exportSalesOrders({
+        status,
+        site,
+        q: query,
+      });
+
+      alert(`Exported ${count} sales orders.`);
+    } catch (error) {
+      console.error("CSV export failed:", error);
+      alert("Export failed. Please try again.");
+    } finally {
+      setExporting(false);
+    }
+  }}
+>
+  {exporting ? "Exporting..." : "Export CSV"}
+          </button>
 
           <button type="submit">Search</button>
         </form>
